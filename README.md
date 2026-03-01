@@ -1,1 +1,1 @@
-# Trabalho-de-Gradua-o
+# Trabalho-de-Graduacao
