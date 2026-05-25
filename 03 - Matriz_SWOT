@@ -1,1 +1,32 @@
+MATRIZ SWOT
+
+FORÇAS — internas e positivas
+•	Canal único e centralizado para registro de denúncias urbanas, eliminando dispersão por telefone, e-mail e redes sociais.
+•	Interface simples e acessível, pensada para diferentes perfis de usuários.
+•	Rastreabilidade completa das ocorrências, gerando confiança no cidadão.
+•	Uso de geolocalização para identificação precisa dos problemas.
+•	Painel administrativo com mapa e relatórios, facilitando a gestão pública.
+•	Notificações automáticas mantendo o cidadão informado sobre o andamento.
+
+FRAQUEZAS — internas e negativas
+•	Dependência de internet e smartphone, excluindo parte da população sem acesso digital.
+•	Necessidade de adesão da prefeitura para que o sistema funcione de fato.
+•	Risco de acúmulo de denúncias sem resposta caso a prefeitura não tenha estrutura para atender.
+•	Projeto inicial sem receita própria, dependente de contrato ou convênio público.
+•	Equipe pequena de desenvolvimento, limitando velocidade de evolução do produto.
+
+OPORTUNIDADES — externas e positivas
+•	Crescente uso de smartphones pela população brasileira, ampliando o alcance do app.
+•	Pressão social por mais transparência e eficiência na gestão pública.
+•	Possibilidade de expansão para outros municípios após validação inicial.
+•	Parcerias com prefeituras via contratos de software público ou licitação.
+•	Tendência de cidades inteligentes (smart cities) abrindo espaço para soluções como essa.
+•	Programas governamentais de transformação digital que podem financiar ou incentivar o projeto.
+
+AMEAÇAS — externas e negativas
+•	Falta de engajamento da população caso não percebam retorno nas denúncias feitas.
+•	Resistência de servidores públicos à adoção de novas tecnologias.
+•	Concorrência com apps similares já existentes e sistemas próprios de algumas prefeituras.
+•	Mudanças políticas na gestão municipal podem interromper a adesão ao sistema.
+•	Questões de segurança e privacidade de dados exigindo conformidade com a LGPD.
 
