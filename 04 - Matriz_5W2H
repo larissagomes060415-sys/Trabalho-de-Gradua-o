@@ -1,1 +1,29 @@
+MATRIZ 5W2H
+
+What (O quê?): Desenvolvimento de um aplicativo mobile para registro de reclamações urbanas.
+
+Why (Por quê?): A comunicação entre cidadãos e prefeituras é fragmentada e ineficiente. 
+Problemas urbanos são reportados por telefone, redes sociais e presencialmente, sem centralização, 
+rastreabilidade ou retorno ao cidadão. O app resolve esse gargalo, tornando o processo mais ágil, 
+transparente e acessível para ambos os lados.
+
+Who (Quem?): O desenvolvimento será realizado pela equipe do Trabalho de Graduação do curso 
+de Análise e Desenvolvimento de Sistemas. Os usuários finais serão os cidadãos do município e 
+os servidores públicos responsáveis pela gestão de ocorrências urbanas.
+
+Where (Onde?): O desenvolvimento ocorrerá nas dependências da instituição de ensino e remotamente pela equipe. 
+O sistema será disponibilizado como aplicativo mobile (Android e iOS) para os cidadãos e como painel web para a
+prefeitura, acessível de qualquer dispositivo com conexão à internet.
+
+When (Quando?): Até o final do 1° semestre de 2027, seguindo o cronograma de artefatos.
+
+How (Como?): O projeto seguirá as etapas de engenharia de software: levantamento e documentação de requisitos,
+modelagem (casos de uso, diagramas UML, BPMN), prototipação de telas e desenvolvimento. Serão utilizadas
+metodologias ágeis para organização das tarefas. O app será desenvolvido com foco em usabilidade,
+geolocalização, envio de fotos e notificações push. O painel da prefeitura contará com mapa de ocorrências, 
+filtros por categoria e relatórios gerenciais.
+
+How Much (Quanto custa?): O custo do projeto será estimado com base na quantidade de horas de desenvolvimento 
+da equipe, ferramentas utilizadas e infraestrutura de hospedagem. 
+
 
