@@ -1,1 +1,58 @@
+Requisitos Funcionais (RF)
+RF01 — Cadastro de usuário
+O sistema deve permitir que o cidadão se cadastre informando nome, e-mail e senha. O cadastro via redes sociais (Google) é desejável.
+RF02 — Login e autenticação
+O sistema deve autenticar o usuário por e-mail e senha, com opção de recuperação de senha via e-mail.
+RF03 — Registro de denúncia
+O sistema deve permitir que o cidadão registre uma denúncia informando categoria, descrição, foto e localização (manual ou via GPS automático).
+RF04 — Categorização de ocorrências
+O sistema deve disponibilizar categorias predefinidas de denúncias, como: buraco na via, lâmpada quebrada, mato alto, calçada danificada, entulho irregular,
+vazamento de água e outros.
+RF05 — Acompanhamento de status
+O sistema deve permitir que o cidadão visualize o status atualizado de suas denúncias: Aberta, Em análise, Em atendimento e Resolvida.
+RF06 — Notificações push
+O sistema deve enviar notificações ao cidadão sempre que o status da sua denúncia for atualizado pela prefeitura.
+RF07 — Visualização de ocorrências no mapa
+O sistema deve exibir um mapa com as denúncias registradas na região do usuário, permitindo identificar ocorrências próximas e evitar duplicatas.
+RF08 — Painel administrativo da prefeitura
+O sistema deve oferecer um painel web para servidores públicos visualizarem, filtrarem, priorizarem e atualizarem o status das denúncias recebidas.
+RF09 — Mapa de calor para gestores
+O painel da prefeitura deve exibir um mapa de calor indicando as regiões com maior concentração de ocorrências.
+RF10 — Validação e invalidação de denúncias
+O sistema deve permitir que o servidor marque uma denúncia como inválida, informando uma justificativa visível ao cidadão.
+RF11 — Relatórios gerenciais
+O sistema deve gerar relatórios periódicos por categoria, bairro e período, exportáveis em PDF ou Excel.
+RF12 — Controle de acesso por perfil
+O sistema deve suportar dois perfis de acesso no painel da prefeitura: Gestor (acesso total) e Atendente (acesso restrito à sua secretaria).
+RF13 — Histórico de denúncias
+O sistema deve manter o histórico completo de todas as denúncias do cidadão, com datas e registros de atualização de status.
+
+Requisitos Não Funcionais 
+RNF01 — Usabilidade
+A interface do app deve ser simples e intuitiva, com no máximo 3 passos para registrar uma denúncia.
+RNF02 — Desempenho
+O sistema deve responder às requisições do usuário em até 3 segundos em condições normais de uso.
+RNF03 — Disponibilidade
+O sistema deve estar disponível 99% do tempo, com janelas de manutenção programadas fora do horário comercial.
+RNF04 — Segurança
+O sistema deve proteger os dados dos usuários em conformidade com a LGPD (Lei Geral de Proteção de Dados), utilizando criptografia nas 
+comunicações (HTTPS) e no armazenamento de senhas.
+RNF05 — Portabilidade
+O aplicativo deve funcionar nos sistemas operacionais Android (versão 8.0 ou superior) e iOS (versão 13 ou superior).
+RNF06 — Escalabilidade
+A arquitetura do sistema deve suportar o crescimento no número de usuários e municípios sem necessidade de reestruturação.
+RNF07 — Acessibilidade
+O app deve seguir diretrizes básicas de acessibilidade, com fontes legíveis, bom contraste e compatibilidade com leitores de tela.
+RNF08 — Manutenibilidade
+O código deve ser desenvolvido seguindo boas práticas de engenharia de software, com documentação técnica e separação por camadas.
+
+Regras de Negócio
+RN01 — Uma denúncia só pode ser registrada se o usuário estiver autenticado no sistema.
+RN02 — Toda denúncia deve obrigatoriamente ter categoria, descrição e localização para ser enviada.
+RN03 — O cidadão pode anexar no máximo 3 fotos por denúncia, com tamanho máximo de 5 MB cada.
+RN04 — Uma denúncia não pode ser editada após o envio; o cidadão pode apenas cancelá-la enquanto estiver com status "Aberta".
+RN05 — O sistema deve alertar o servidor quando houver mais de 3 denúncias do mesmo tipo em um raio de 500 metros, sugerindo possível duplicata.
+RN06 — O prazo máximo para a prefeitura dar uma resposta inicial à denúncia é de 5 dias úteis, configurável pelo gestor.
+RN07 — Apenas o perfil Gestor pode excluir denúncias, alterar categorias e emitir relatórios.
+RN08 — O status de uma denúncia só pode avançar em ordem: Aberta → Em análise → Em atendimento → Resolvida. Não é permitido retroceder etapas.
 
