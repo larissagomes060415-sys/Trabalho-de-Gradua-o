@@ -1,1 +1,142 @@
+UC01 — Cadastrar-se
+
+Nome	Cadastrar-se
+Ator principal	Cidadão
+Pré-condição	O usuário não possui cadastro no sistema
+Pós-condição	Usuário cadastrado e apto a realizar login
+Fluxo principal	1. Cidadão acessa o app e clica em "Criar conta"
+                2. Preenche nome, e-mail e senha
+                3. Confirma o cadastro
+                4. Sistema valida os dados e cria a conta
+                5. Sistema exibe mensagem de sucesso
+Fluxo alternativo	A3. Cidadão opta por cadastro via Google
+Fluxo de exceção	E4. E-mail já cadastrado → sistema exibe mensagem de erro e solicita novo e-mail
+
+
+UC02 — Fazer login
+
+Nome	Fazer login
+Ator principal	Cidadão / Servidor municipal
+Pré-condição	O usuário possui cadastro no sistema
+Pós-condição	Usuário autenticado e redirecionado à tela principal
+Fluxo principal	1. Usuário informa e-mail e senha
+                2. Sistema valida as credenciais
+                3. Sistema redireciona para a tela inicial
+Fluxo alternativo	A1. Usuário clica em "Esqueci minha senha" → sistema envia e-mail de recuperação
+Fluxo de exceção	E2. Credenciais inválidas → sistema exibe mensagem de erro
+
+
+UC03 — Registrar denúncia
+
+Nome	Registrar denúncia
+Ator principal	Cidadão
+Pré-condição	Cidadão autenticado no sistema
+Pós-condição	Denúncia registrada com status "Aberta" e prefeitura notificada
+Fluxo principal	1. Cidadão acessa "Nova denúncia"
+                2. Seleciona a categoria
+                3. Descreve o problema
+                4. Anexa foto (UC04)
+                5. Confirma localização via GPS (UC05)
+                6. Envia a denúncia
+                7. Sistema registra e notifica a prefeitura
+Fluxo alternativo	A5. Cidadão informa o endereço manualmente
+Fluxo de exceção	E3. Descrição ou categoria não preenchida → sistema bloqueia o envio e exibe alerta
+
+
+UC04 — Anexar foto
+
+Nome	Anexar foto
+Ator principal	Cidadão
+Pré-condição	Cidadão está registrando uma denúncia (UC03)
+Pós-condição	Foto anexada à denúncia
+Fluxo principal	1. Sistema solicita acesso à câmera ou galeria
+                2. Cidadão captura ou seleciona a foto
+                3. Sistema valida tamanho e formato
+                4. Foto é anexada à denúncia
+Fluxo alternativo	—
+Fluxo de exceção	E3. Foto acima de 5 MB → sistema solicita nova imagem
+
+
+UC05 — Usar geolocalização
+
+Nome	Usar geolocalização
+Ator principal	Cidadão
+Pré-condição	GPS do dispositivo habilitado
+Pós-condição	Localização registrada na denúncia
+Fluxo principal	1. Sistema solicita permissão de localização
+                2. Obtém coordenadas GPS
+                3. Exibe localização no mapa para confirmação
+                4. Localização confirmada e salva
+Fluxo alternativo	A1. GPS indisponível → cidadão digita o endereço manualmente
+Fluxo de exceção	—
+
+
+UC06 — Acompanhar status
+
+Nome	Acompanhar status
+Ator principal	Cidadão
+Pré-condição	Cidadão possui ao menos uma denúncia registrada
+Pós-condição	Cidadão visualiza o status atualizado da ocorrência
+Fluxo principal	1. Cidadão acessa "Minhas denúncias"
+                2. Seleciona uma ocorrência
+                3. Sistema exibe status atual, histórico e prazo estimado
+Fluxo alternativo	—
+Fluxo de exceção	E1. Nenhuma denúncia encontrada → sistema exibe mensagem orientando o registro
+
+
+UC07 — Visualizar mapa
+
+Nome	Visualizar mapa
+Ator principal	Cidadão
+Pré-condição	Cidadão autenticado
+Pós-condição	Cidadão visualiza ocorrências próximas no mapa
+Fluxo principal	1. Cidadão acessa a aba "Mapa"
+                2. Sistema exibe marcadores das denúncias na região
+                3. Cidadão filtra por categoria ou status
+                4. Cidadão toca em um marcador e vê detalhes
+Fluxo alternativo	—
+Fluxo de exceção	—
+
+
+UC08 — Validar denúncia
+
+Nome	Validar denúncia
+Ator principal	Servidor municipal
+Pré-condição	Servidor autenticado; denúncia com status "Aberta"
+Pós-condição	Denúncia marcada como válida ou inválida (com justificativa)
+Fluxo principal	1. Servidor acessa o painel e seleciona uma denúncia
+                2. Analisa dados, foto e localização
+                3. Marca como válida → status muda para "Em análise"
+                4. Cidadão é notificado
+Fluxo alternativo	A3. Servidor marca como inválida → informa justificativa → cidadão é notificado
+Fluxo de exceção	—
+
+
+UC09 — Atualizar status
+
+Nome	Atualizar status
+Ator principal	Servidor municipal
+Pré-condição	Denúncia com status "Em análise" ou "Em atendimento"
+Pós-condição	Status atualizado e cidadão notificado
+Fluxo principal	1. Servidor seleciona a denúncia no painel
+                2. Avança o status para a próxima etapa
+                3. Sistema salva a atualização com data e hora
+                4. Notificação push enviada ao cidadão
+Fluxo alternativo	—
+Fluxo de exceção	E2. Tentativa de retroceder status → sistema bloqueia e exibe mensagem de erro
+
+
+UC10 — Gerar relatório
+
+Nome	Gerar relatório
+Ator principal	Servidor municipal (perfil Gestor)
+Pré-condição	Gestor autenticado com perfil de acesso adequado
+Pós-condição	Relatório gerado e disponível para download
+Fluxo principal	1. Gestor acessa "Relatórios" no painel
+                2. Define filtros: período, categoria e bairro
+                3. Sistema processa os dados
+                4. Relatório exibido em tela e disponível para download em PDF ou Excel
+Fluxo alternativo	—
+Fluxo de exceção	E3. Nenhum dado encontrado para os filtros → sistema exibe aviso
+
 
