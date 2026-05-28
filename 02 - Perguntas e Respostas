@@ -1,1 +1,27 @@
+PERGUNTAS AOS USUÁRIOS
+
+1) Quais são os principais problemas que os cidadãos relatam hoje? 
+Resposta: Buracos em vias, lâmpadas queimadas e descarte irregular de lixo.
+
+2) O que é indispensável para validar uma denúncia? 
+Resposta: Uma foto do local, a descrição do problema e a localização exata (endereço ou GPS).
+
+
+PERGUNTAS A PREFEITURA
+
+3) Quem deve ter acesso ao painel administrativo?
+Resposta: Funcionários autorizados da prefeitura para alterar o status da denúncia (Pendente, Em Análise, Resolvido).
+
+4) O usuário precisa se identificar?
+Resposta: Sim, via CPF ou e-mail, para evitar trotes e permitir o acompanhamento do protocolo.
+
+5) Há preocupação com denúncias falsas ou duplicadas? 
+Resposta: Sim. O sistema deveria permitir que o servidor marque uma denúncia como inválida com uma justificativa, e identificar 
+automaticamente ocorrências repetidas no mesmo local.
+
+6) Seria útil ter um painel com mapa mostrando onde estão concentradas as denúncias?
+Resposta: Com certeza. Isso permitiria planejar melhor as equipes de campo e identificar áreas críticas.
+
+7) Vocês precisariam de relatórios periódicos sobre as ocorrências?
+Resposta: Sim, para prestar contas internamente e à população. Relatórios por período, por categoria e por bairro seriam ideais.
 
