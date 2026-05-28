@@ -1,4 +1,5 @@
-Requisitos Funcionais (RF)
+REQUISITOS FUNCIONAIS
+
 RF01 — Cadastro de usuário
 O sistema deve permitir que o cidadão se cadastre informando nome, e-mail e senha. O cadastro via redes sociais (Google) é desejável.
 RF02 — Login e autenticação
@@ -27,7 +28,8 @@ O sistema deve suportar dois perfis de acesso no painel da prefeitura: Gestor (a
 RF13 — Histórico de denúncias
 O sistema deve manter o histórico completo de todas as denúncias do cidadão, com datas e registros de atualização de status.
 
-Requisitos Não Funcionais 
+REQUISITOS NÃO FUNCIONAIS
+
 RNF01 — Usabilidade
 A interface do app deve ser simples e intuitiva, com no máximo 3 passos para registrar uma denúncia.
 RNF02 — Desempenho
@@ -46,7 +48,7 @@ O app deve seguir diretrizes básicas de acessibilidade, com fontes legíveis, b
 RNF08 — Manutenibilidade
 O código deve ser desenvolvido seguindo boas práticas de engenharia de software, com documentação técnica e separação por camadas.
 
-Regras de Negócio
+REGRAS DE NEGÓCIO
 RN01 — Uma denúncia só pode ser registrada se o usuário estiver autenticado no sistema.
 RN02 — Toda denúncia deve obrigatoriamente ter categoria, descrição e localização para ser enviada.
 RN03 — O cidadão pode anexar no máximo 3 fotos por denúncia, com tamanho máximo de 5 MB cada.
