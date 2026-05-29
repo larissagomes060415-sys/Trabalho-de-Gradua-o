@@ -1,1 +1,76 @@
+1.	Informações do Projeto
+NOME DO PROJETO	:	Aplicativo de Gestão Inteligente de Denúncias Urbanas
+Data de Início Prevista	:	27/05/2026
+Gerente do Projeto	:	Juliana Duarte
+Patrocinador	:	Larissa Peres
+
+2.	Justificativa
+A necessidade de modernizar a comunicação entre cidadãos e a gestão pública, reduzindo a burocracia no registro de problemas urbanos (como iluminação, asfalto ou saneamento) e aumentando a transparência no acompanhamento das soluções.
+
+3.	Objetivos
+•	Reduzir o tempo de triagem das denúncias enviadas pelos cidadãos através da categorização automática de incidentes
+•	Fornecer ao usuário um histórico atualizado em tempo real sobre o status de sua solicitação
+•	Gerar relatórios que identifiquem as áreas da cidade com maior índice de ocorrências, auxiliando no planejamento urbano
+•	Garantir uma interface intuitiva e de fácil navegação (foco em UX)
+•	Implementar um painel administrativo para visualização e status das demandas
+
+4.	Escopo Inicial
+•	Documento de Requisitos
+•	Desenvolvimento de um protótipo
+•	Interface de Denúncia
+•	Timeline de Acompanhamento
+
+5.	Principais entregas
+a)	Documento de Requisitos
+b)	Protótipo funcional
+c)	Sistema interativo
+
+6.	Stakeholders
+Patrocinador: Cidadãos, Gestores Públicos e FATEC
+
+
+7.	Cronograma e Orçamento
+15/05	Análise de Requisitos	Larissa Peres e Juliana Duarte	Engenheiro de Software
+18/05	Arquitetura do Projeto	Larissa Peres e Juliana Duarte	Arquiteto de Software
+20/05	Código do Projeto Inicial	Larissa Peres e Juliana Duarte	Engenheiro e Arquiteto
+25/05	Estrutura de Banco de Dados	Larissa Peres e Juliana Duarte	DBA
+10/06	Protótipo	Larissa Peres e Juliana Duarte	Engenheiro de Software
+10/07	Projeto em Produção	Larissa Peres e Juliana Duarte	Engenheiro de Software
+20/08	Entrega de Manuais	Larissa Peres e Juliana Duarte	Engenheiro de Software
+
+Orçamento: Previsão de custos – R$50.000,00 (cinquenta mil reais).
+
+8.	Premissas
+a.	A empresa fornecerá informações relevantes ao projeto permitindo agendamento e visitas técnicas no local, via e-mail ou através de chat;
+b.	A contratante pagará de forma antecipada o montante aprovado no projeto;
+c.	A contratante vai fornecer equipamentos compatíveis e alinhados ao projeto;
+d.	Os usuários finais participarão dos treinamentos alinhados com a equipe do projeto.
+
+9.	Restrições
+•	O custo efetivo não poderá passar de R$ 50.000,00 (qualquer alteração deverá ser acordada com o patrocinador e gerente de projetos)
+•	Aquisição de equipamentos de integração (IOT) deverá ser previamente autorizados pelo patrocinador
+•	O treinamento deverá ser realizado em horário comercial
+•	A implantação não poderá paralisar as atividades do setor da empresa
+
+10.	Riscos Iniciais
+•	Funcionários poderão não colaborar conforme conversado
+•	Datacenter poderá ter custos alterados em Dólar
+•	Equipe de desenvolvimento poderá ser alterada durante o projeto
+•	Gerente de projetos poderá ser trocado
+•	Patrocinador poderá desistir do projeto caso não atenda aos requisitos
+•	Possíveis falhas de comunicação entre Stakeholders
+
+
+11.	Critérios de Sucesso
+a.	Documentação de Requisitos entregue no prazo
+b.	Cadastros de denúncias realizados em tempo 30% menor
+c.	Agenda com 70% menos gargalos
+d.	Faturamento da empresa cresceu 20% nos primeiros dias de testes do sistema
+
+Franca – SP, 27 de Abril de 2026.
+
+
+
+JULIANA DUARTE		LARISSA PERES
+
 
