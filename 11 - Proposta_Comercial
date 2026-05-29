@@ -1,1 +1,48 @@
+PROPOSTA COMERCIAL
+
+1. Resumo Executivo
+A Cidade Alerta tem o prazer de apresentar esta proposta para o desenvolvimento do Sistema de Denúncias Urbanas. O projeto será realizado utilizando tecnologias modernas, de alta performance e código aberto, garantindo segurança, escalabilidade e custo-benefício a longo prazo.
+•	Escopo Principal: Implementação completa de CRUD para Usuários (Listagem, Cadastro, Edição, Exclusão).
+•	Tecnologias Utilizadas: C# (.NET 9), Blazor (Frontend), PostgreSQL (Banco de Dados).
+
+2. Escopo do Trabalho (O Que Será Entregue)
+Entregável	Descrição Detalhada
+Backend	API .NET 9 RESTful para gestão de Usuários. Implementação de Controllers e Services de dados.
+Frontend	Interface de usuário desenvolvida em Blazor com layout responsivo. Telas de Dashboard de Usuários e Formulário de Cadastro/Edição.
+Infraestrutura	
+Testes	Testes de Integração para as principais funcionalidades da API.
+
+3. Não Escopo (Exclusões) 
+Os seguintes itens não estão inclusos nesta proposta de Preço Fixo e podem ser orçados separadamente (via Aditivo Contratual):
+•	Relatórios complexos ou dashboards BI (Business Intelligence).
+•	Integração com sistemas externos de terceiros (Ex: ERPs, gateways de pagamento).
+
+4. Métricas e Investimento
+Métrica	Estimativa	Detalhes
+Prazo (Duração do Projeto)	21 a 24 dias úteis	O prazo considera o desenvolvimento e a fase de testes, excluindo o tempo de aprovação do cliente.
+Investimento Total (Preço Fixo)	R$ 25.800,00	Valor fixo pelo escopo definido, cobrindo todo o esforço de desenvolvimento (código, testes, deploy).
+Custo Mensal de Infra	R$ 2000,00	Valor aproximado mensal para manter sistema atualizado.
+
+5. Premissas e Condicionais
+Esta proposta é baseada nas seguintes premissas, e a alteração de qualquer uma delas pode levar a uma revisão do prazo e custo:
+1.	O cliente designará um Ponto Focal Técnico para aprovação e feedback rápidos (máx. 24 horas).
+2.	O design visual (layout) será baseado em um template de mercado Blazor padrão.
+
+6. Condições de Pagamento
+Marco	Valor	Vencimento
+Início	40% (R$ 10.320,00)	Assinatura do Contrato
+Meio	30% (R$ 7.740,00)	Entrega do Backend (API) para testes
+Conclusão	30% (R$ 7.740,00)	Implantação do módulo em Homologação
+
+A presente proposta comercial expressa o escopo, prazo e investimento estimados para a execução do projeto. A aceitação formal deste documento pelo Contratante (Cliente), seja por meio de assinatura, e-mail de confirmação, ou ordem de compra, será o marco inicial para a elaboração do Contrato de Prestação de Serviços definitivo. Este contrato oficializará os termos, condições legais, penalidades e prazos finais para a assinatura de ambas as partes.
+
+FRANCA-SP, 29 DE MAIO DE 2026.
+
+-------------------------------------------------	-----------------------------------------------------
+Cidade Alerta                                                      Governo Municipal
+(Proponente)                                                      (Aceite de Escopo e Métricas)
+CNPJ: 00.000.000/0001-01	
+                                       
+
+
 
