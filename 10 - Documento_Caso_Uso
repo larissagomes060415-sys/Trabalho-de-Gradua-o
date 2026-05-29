@@ -1,1 +1,84 @@
+UC01 — Cadastrar-se
 
+Nome	Cadastrar-se
+Ator principal	Cidadão
+Pré-condição	O usuário não possui cadastro no sistema
+Pós-condição	Usuário cadastrado e apto a realizar login
+Fluxo principal	1. Cidadão acessa o app e clica em "Criar conta"
+                2. Preenche nome, e-mail e senha
+                3. Confirma o cadastro
+                4. Sistema valida os dados e cria a conta
+                5. Sistema exibe mensagem de sucesso
+Fluxo alternativo	A3. Cidadão opta por cadastro via Google
+Fluxo de exceção	E4. E-mail já cadastrado → sistema exibe mensagem de erro e solicita novo e-mail
+
+
+UC02 — Fazer login
+
+Nome	Fazer login
+Ator principal	Cidadão / Servidor municipal
+Pré-condição	O usuário possui cadastro no sistema
+Pós-condição	Usuário autenticado e redirecionado à tela principal
+Fluxo principal	1. Usuário informa e-mail e senha
+                2. Sistema valida as credenciais
+                3. Sistema redireciona para a tela inicial
+Fluxo alternativo	A1. Usuário clica em "Esqueci minha senha" → sistema envia e-mail de recuperação
+Fluxo de exceção	E2. Credenciais inválidas → sistema exibe mensagem de erro
+
+
+UC03 — Registrar denúncia
+
+Nome	Registrar denúncia
+Ator principal	Cidadão
+Pré-condição	Cidadão autenticado no sistema
+Pós-condição	Denúncia registrada com status "Aberta" e prefeitura notificada
+Fluxo principal	1. Cidadão acessa "Nova denúncia"
+                2. Seleciona a categoria
+                3. Descreve o problema
+                4. Anexa foto (UC04)
+                5. Confirma localização via GPS (UC05)
+                6. Envia a denúncia
+                7. Sistema registra e notifica a prefeitura
+Fluxo alternativo	A5. Cidadão informa o endereço manualmente
+Fluxo de exceção	E3. Descrição ou categoria não preenchida → sistema bloqueia o envio e exibe alerta
+
+
+UC04 — Anexar foto
+
+Nome	Anexar foto
+Ator principal	Cidadão
+Pré-condição	Cidadão está registrando uma denúncia (UC03)
+Pós-condição	Foto anexada à denúncia
+Fluxo principal	1. Sistema solicita acesso à câmera ou galeria
+                2. Cidadão captura ou seleciona a foto
+                3. Sistema valida tamanho e formato
+                4. Foto é anexada à denúncia
+Fluxo alternativo	—
+Fluxo de exceção	E3. Foto acima de 5 MB → sistema solicita nova imagem
+
+
+UC05 — Usar geolocalização
+
+Nome	Usar geolocalização
+Ator principal	Cidadão
+Pré-condição	GPS do dispositivo habilitado
+Pós-condição	Localização registrada na denúncia
+Fluxo principal	1. Sistema solicita permissão de localização
+                2. Obtém coordenadas GPS
+                3. Exibe localização no mapa para confirmação
+                4. Localização confirmada e salva
+Fluxo alternativo	A1. GPS indisponível → cidadão digita o endereço manualmente
+Fluxo de exceção	—
+
+
+UC06 — Acompanhar status
+
+Nome	Acompanhar status
+Ator principal	Cidadão
+Pré-condição	Cidadão possui ao menos uma denúncia registrada
+Pós-condição	Cidadão visualiza o status atualizado da ocorrência
+Fluxo principal	1. Cidadão acessa "Minhas denúncias"
+                2. Seleciona uma ocorrência
+                3. Sistema exibe status atual, histórico e prazo estimado
+Fluxo alternativo	—
+Fluxo de exceção	E1. Nenhuma denúncia encontrada → sistema exibe mensagem orientando o registro
